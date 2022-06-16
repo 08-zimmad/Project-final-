@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameText"
+            android:text="Demo Text"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img1" />
+
+
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Demo Price"
+            android:textColor="#F34336"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@+id/nameText"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
