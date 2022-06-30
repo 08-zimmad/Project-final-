@@ -1,11 +1,11 @@
 package com.example.foodapp;
 
 public class model {
-    String foodName,foodPrice,purl;
+    String name,price,purl;
 
     public model(String foodName, String foodPrice, String purl) {
-        this.foodName = foodName;
-        this.foodPrice = foodPrice;
+        this.name = foodName;
+        this.price = foodPrice;
         this.purl = purl;
     }
     public model()
@@ -14,20 +14,20 @@ public class model {
     }
 
 
-    public String getFoodName() {
-        return foodName;
+    public String getName() {
+        return name;
     }
 
-    public void setFoodName(String foodName) {
-        this.foodName = foodName;
+    public void setName(String foodName) {
+        this.name = foodName;
     }
 
-    public String getFoodPrice() {
-        return foodPrice;
+    public String getPrice() {
+        return price;
     }
 
-    public void setFoodPrice(String foodPrice) {
-        this.foodPrice = foodPrice;
+    public void setPrice(String foodPrice) {
+        this.price = foodPrice;
     }
 
     public String getPurl() {

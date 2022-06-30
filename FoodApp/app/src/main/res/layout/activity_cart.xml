@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+
+    <TextView
+        android:id="@+id/addtocart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Cart"
+        android:textColor="#E35111"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="192dp"
+        android:layout_height="36dp"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="42dp"
+        android:text="Price"
+        android:textColor="#FDAF96"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cart_food_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtocart" />
+
+
+    <TextView
+        android:id="@+id/Rs"
+        android:layout_width="96dp"
+        android:layout_height="41dp"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="42dp"
+        android:text=".Rs"
+        android:textAlignment="center"
+        android:textColor="#FDAF96"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/cart_food_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtocart"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cart_food_img"
+        android:layout_width="251dp"
+        android:layout_height="262dp"
+        android:layout_marginBottom="124dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addtocart"
+        app:layout_constraintVertical_bias="0.36" />
+
+
+    <ImageButton
+        android:id="@+id/plusBtn"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="116dp"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_food_img"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/quantityTextCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusBtn"
+        app:layout_constraintStart_toEndOf="@+id/minusBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cart_food_img"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <ImageButton
+        android:id="@+id/minusBtn"
+        android:layout_width="48dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="124dp"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_food_img"
+        app:layout_constraintVertical_bias="0.161" />
+
+
+    <Button
+        android:id="@+id/cartBtn"
+        android:layout_width="247dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="136dp"
+        android:text="Add To Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

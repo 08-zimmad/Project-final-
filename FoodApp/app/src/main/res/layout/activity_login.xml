@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,73 +7,39 @@
     tools:context=".LoginPage"
     android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="100dp"
-        android:orientation="vertical"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp">
+        android:layout_marginTop="172dp"
+        android:includeFontPadding="false"
+        android:paddingTop="20sp"
+        android:shadowColor="#0E0E0E"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/google_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:text="Sign In with Google"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        tools:layout_editor_absoluteX="0dp" />
 
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center_horizontal"
-            />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:includeFontPadding="false"
-            android:paddingTop="20sp"
-            android:shadowColor="#0E0E0E"
-            android:text="Sign In"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="45sp" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:includeFontPadding="false"
-            android:shadowColor="#0E0E0E"
-            android:text="Sign-In with Google using Firebase!"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="14sp" />
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="100dp"/>
-
-
-        <Button
-            android:id="@+id/google_signIn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:elevation="8dp"
-            android:text="Sign In with Google"
-            android:textColor="#fff" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="100dp"
-            android:paddingRight="100dp"
-            android:layout_marginTop="160dp">
-
-
-
-
-        </LinearLayout>
-
-
-
-
-    </LinearLayout>
-
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

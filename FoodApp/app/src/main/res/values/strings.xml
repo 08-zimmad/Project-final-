@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FoodApp</string>
+    <string name="app_name">Order Now</string>
     <string name="order_and_eat">Order and Eat</string>
     <string name="user_image">user_image</string>
     <string name="title_activity_login">LoginActivity</string>
