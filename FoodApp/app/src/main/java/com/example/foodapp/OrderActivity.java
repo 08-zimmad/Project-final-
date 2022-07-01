@@ -70,12 +70,10 @@ public class OrderActivity extends AppCompatActivity {
 
 
         progressDialog=new ProgressDialog(this);
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("Fetching Data...");
-        progressDialog.show();
+        EventChangeListener();
 
         homeBtn=(FloatingActionButton)findViewById(R.id.HomeBtnOrder);
-        confirmOrderBtn=findViewById(R.id.orderBtn);
+        confirmOrderBtn=findViewById(R.id.orderBtnOrder);
         confirmOrderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,7 +101,7 @@ public class OrderActivity extends AppCompatActivity {
         dataholder=new ArrayList<>();
         adapter=new OrderAdapter(dataholder,OrderActivity.this);
         recyclerView.setAdapter(adapter);
-        EventChangeListener();
+
 
 
 

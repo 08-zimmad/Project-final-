@@ -146,7 +146,7 @@ public class Cart extends AppCompatActivity {
         dbRoot.collection(Objects.requireNonNull(user.getEmail())).add(items).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
             @Override
             public void onComplete(@NonNull Task<DocumentReference> task) {
-                Toast.makeText(Cart.this, "", Toast.LENGTH_SHORT).show();
+
             }
         });
 
